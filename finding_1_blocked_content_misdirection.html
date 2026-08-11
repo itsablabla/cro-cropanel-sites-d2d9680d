@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blocked content misdirection — allbirds.com</title>
+<link rel="stylesheet" href="cro_system.css">
+<style>:root{--green:#224177;--teal:#7292ca;--navy:#10141c;--mid:#171d29;--light:#212a3b;--muted:#8b95a7;--off:#dcdfe5;}</style></head>
+<body>
+<header>
+  <a class="logo-area" href="index.html" style="text-decoration:none">
+    <div class="logo-dot">A</div>
+    <div>
+      <div class="logo-text">allbirds.com</div>
+      <div class="logo-sub">CRO Recommendations — August 2026</div>
+    </div>
+  </a>
+  <nav class="nav"><a href="index.html">Overview</a><a href="roadmap.html">Roadmap</a><a href="technical.html">Technical</a><a href="appendix.html">Findings</a><a href="methodology.html">Method</a></nav>
+</header>
+
+<div class="wrap">
+  <div class="finding-head">
+    <div class="badge-row">
+      <span class="rank-chip rank-urgent">1</span>
+      <span class="badge badge-urgent">Urgent</span>
+      <span class="badge badge-effort">Homepage</span>
+      
+    </div>
+    <h1>Blocked content misdirection</h1>
+    <p class="thesis">The hero contains multiple H1s that are &#x27;blocked&#x27; messages, indicating a rendering issue that prevents visitors from seeing the intended message, causing confusion and distrust.</p>
+  </div>
+  
+  <div class="section" style="padding-top:0;border-top:none">
+    <div class="split">
+      <div class="col">
+        <div class="label-bar label-current">CURRENT — Blocked hero</div>
+        <div class="shotwrap shot-window"><img class="shot" src="shot_home.png" alt="Screenshot of the current page" loading="lazy"><div class="shot-tag"><strong>⚠ Blocked content misdirection</strong>The homepage hero is rendering &#x27;blocked&#x27; messages (e.g., &#x27;shop.app is blocked&#x27;) instead of the intended headline, likely due to ad blockers or script errors. This breaks the visual</div></div>
+      </div>
+      <div class="divider"></div>
+      <div class="col">
+        <div class="label-bar label-recommended">RECOMMENDED — Clear hero</div>
+        <div class="diff-chips"><span class="chip">Remove blocked messages</span><span class="chip">Add supporting subheadline</span><span class="chip">Server-side render hero</span></div><div class="rec-stage" style="background-image:url('shot_home.png')"><div class="rec-dim"></div><div class="rec-card"><div class="surface"><div class="eyebrow">Allbirds</div><h1>Wildly Comfortable. Super Natural.</h1><p>Step into natural comfort with our sustainable footwear.</p><span class="btn-primary">Shop All</span><div class="win-callout"><strong>✓ Clear hero</strong>The hero now displays the intended message without any 'blocked' placeholders.</div></div></div></div>
+        <div class="annotation good"><strong>Fix</strong>Replace the client-side rendered hero with server-side rendering or use fallback text that is not blocked by ad blockers. Ensure the hero always displays the intended headline &#x27;Wildly Comfortable. Super Natural.&#x27; and a supporting subheadline. This guarantees the message is visible to all visitors, restoring credibility and clarity. The change is low-effort and directly addresses the rendering defect.</div>
+      </div>
+    </div>
+  </div>
+  
+<div class="section">
+  <div class="eyebrow-label">Evidence</div>
+  <h2 class="section-title">Observed on the live site </h2>
+  <div class="agreement">✓ Flagged independently by 4 of 7 analysts</div>
+  <ul class="evidence-list"><li>H1s include: &#x27;shop.app is blocked&#x27;, &#x27;www.allbirds.com is blocked&#x27; (repeated 4 times)</li><li>H1s include &#x27;shop.app is blocked&#x27; and &#x27;www.allbirds.com is blocked&#x27; repeated five times; body sample shows &#x27;shop.app is blocked&#x27; and &#x27;www.allbirds.com is blocked&#x27;.</li><li>H1s include &#x27;shop.app is blocked&#x27; and multiple &#x27;www.allbirds.com is blocked&#x27;; title is &#x27;shop.app&#x27; instead of Allbirds; no meta description or canonical.</li><li>SEO title: &#x27;shop.app&#x27;, H1s: &#x27;shop.app is blocked&#x27;, &#x27;www.allbirds.com is blocked&#x27; (repeated 4 times).</li></ul>
+</div>
+  
+<div class="section">
+  <div class="eyebrow-label">Business case</div>
+  <h2 class="section-title">If this change wins</h2>
+  <div class="tiles" style="grid-template-columns:repeat(3,1fr)">
+    <div class="tile">
+      <div class="tval">$70,762 – $283,046</div>
+      <div class="tlabel">annual opportunity if it wins</div>
+      <button class="explain" data-m="size-1">How is this calculated?</button>
+    </div>
+    <div class="tile">
+      <div class="tval">Low</div>
+      <div class="tlabel">Effort — 0.5-2 days</div>
+      <button class="explain" data-m="eff-1">What does this mean?</button>
+    </div>
+    <div class="tile">
+      <div class="tval" style="font-size:20px">40 days</div>
+      <div class="tlabel">A/B test duration</div>
+      <button class="explain" data-m="test-1">How is this calculated?</button>
+    </div>
+  </div>
+</div>
+  
+<div class="section">
+  <div class="eyebrow-label">Prioritisation</div>
+  <h2 class="section-title">PXL score: 5 / 10</h2>
+  <button class="explain" data-m="pxl-1">Why these questions?</button>
+  <div class="tscroll"><table class="dtable">
+    <thead><tr><th>Question</th><th class="num">Answer</th><th class="num">Points</th></tr></thead>
+    <tbody><tr><td>Is the change above the fold?</td><td class="num yes">Yes</td><td class="num">1</td></tr><tr><td>Is the change noticeable in under 5 seconds?</td><td class="num yes">Yes</td><td class="num">2</td></tr><tr><td>Does it add or remove an element?</td><td class="num yes">Yes</td><td class="num">1</td></tr><tr><td>Does it run on a high-traffic page?</td><td class="num yes">Yes</td><td class="num">1</td></tr><tr><td>Discovered via user testing?</td><td class="num no">No</td><td class="num">0</td></tr><tr><td>Discovered via qualitative feedback (survey, support)?</td><td class="num no">No</td><td class="num">0</td></tr><tr><td>Supported by heatmaps or session recordings?</td><td class="num no">No</td><td class="num">0</td></tr><tr><td>Found via digital analytics or real-user field data?</td><td class="num no">No</td><td class="num">0</td></tr><tr><td>Verified by direct technical measurement?</td><td class="num no">No</td><td class="num">0</td></tr></tbody>
+  </table></div>
+</div>
+  
+<div class="section">
+  <div class="eyebrow-label">Implementation</div>
+  <h2 class="section-title">Hand this to your developer</h2>
+  <div class="dl-row" style="margin:0 0 20px">
+    <a class="btn-dl" href="dev_spec_1_blocked_content_misdirection.md" download>Download this spec (.md)</a>
+  </div>
+  <dl class="spec">
+    <dt>Surface</dt><dd>Homepage — HOMEPAGE HERO</dd>
+    <dt>Problem</dt><dd>The hero contains multiple H1s that are &#x27;blocked&#x27; messages, indicating a rendering issue that prevents visitors from seeing the intended message, causing confusion and distrust.</dd>
+    <dt>Current state</dt><dd>h1: Wildly Comfortable. Super Natural. (plus 5 blocked messages); cta: Shop All; notes: The presence of &#x27;blocked&#x27; messages in the H1s suggests that the hero section is not loading correctly for some visitors, potentially due to ad blockers or script errors, which undermines the credibility of the page.</dd>
+    <dt>Change</dt><dd>h1: Wildly Comfortable. Super Natural.; cta: Shop All; notes: Ensure the hero content is server-side rendered or uses fallback text that is not blocked by ad blockers. The hero should always display the intended message without any &#x27;blocked&#x27; placeholders.</dd>
+    <dt>Acceptance criteria</dt><dd class="mono">GIVEN a first-time visitor on the affected page<br>
+      WHEN the change is live<br>
+      THEN Ensure the hero content is server-side rendered or uses fallback text that is not blocked by ad blockers. The hero should always display the intended message without any &#x27;blocked&#x27; placeholders,
+      with no regression at 375px and 1280px widths.</dd>
+    <dt>Tracking</dt><dd class="mono">event: <strong>cro_blocked_content_misdirection</strong> on interaction with the
+      changed element; verify it fires in BOTH variants before opening traffic.</dd>
+    <dt>Success metric</dt><dd>conversion rate + bounce rate on the affected page</dd>
+    <dt>QA checklist</dt><dd class="mono">Chrome / Safari / Firefox · 375px + 1280px ·
+      keyboard reachable · screen-reader name present · no CLS introduced</dd>
+    <dt>Effort</dt><dd>Low —
+      0.5-2 days</dd>
+    <dt>Test plan</dt><dd>118,817 visitors per variant
+      (95% significance, 80% power);
+      40 days.</dd>
+    <dt>Rollback</dt><dd>Feature-flag the change; revert the flag if the primary metric
+      drops for 3 consecutive days.</dd>
+  </dl>
+</div>
+  <div class="pager"><a href="index.html">← Overview</a><a href="finding_2_misleading_blocked_page_title.html">Misleading blocked page title →</a></div>
+</div>
+<div class="footer">
+  Prepared by <strong>The CRO Panel</strong> · <a href="mailto:panel@example.com">panel@example.com</a> · <a href="methodology.html">Method &amp; confidence</a>
+</div>
+<div class="modal-overlay" id="modal-root"><div class="modal-box"></div></div>
+<template id="m-size-1"><h3>How this range is calculated</h3><p>Result: <strong>$70,762 – $283,046 / yr</strong></p><div class="formula">annual visits × baseline conversion × relative lift × order value
+= 2,160,000 annual visits x 2.10% conversion x 2.0-8.0% relative lift x $78 order value</div><p>The 2.0–8.0% relative-lift band is an assumption bounded by severity (Urgent), not a prediction.</p><p><strong>Why the range is conservative:</strong> Across 127,000 experiments, 12% produced a statistically significant improvement on the primary metric; a healthy programme win rate is 10-30%. Winning tests also overstate their true effect, so treat this as the prize if the change works — never expected revenue.</p></template><template id="m-eff-1"><h3>How effort is estimated</h3><table><tr><th>Bracket</th><th>Days</th><th>Typical scope</th></tr><tr><td>Low</td><td class='num'>0.5–2</td><td>copy, colour, labels, image swaps</td></tr><tr><td>Medium</td><td class='num'>2–5</td><td>layout shifts, form changes, new modules</td></tr><tr><td>High</td><td class='num'>5+</td><td>personalisation, funnel work, integrations</td></tr></table><p>Assigned by matching the recommended change against these scopes; the estimate is a bracket, not a quote.</p></template><template id="m-test-1"><h3>Sample size math</h3><p>Two-proportion z-test, the standard pre-test sample-size calculation:</p><div class="formula">n = [z&#8320;.&#8320;&#8322;&#8325;·√(2·p̄·(1−p̄)) + z&#8320;.&#8322;&#8320;·√(p₁(1−p₁)+p₂(1−p₂))]² / (p₁−p₂)²</div><table><tr><td>Baseline conversion</td><td class='num'>2.1%</td></tr><tr><td>Significance / power</td><td class='num'>95% / 80%</td></tr><tr><td>Sample per variant, 8.0% lift</td><td class='num'>118,817</td></tr><tr><td>Sample per variant, 2.0% lift</td><td class='num'>1,847,435</td></tr></table><p>Halving the minimum detectable effect roughly quadruples the sample required, which is why the conservative figure is so much larger.</p></template><template id="m-pxl-1"><h3>What PXL is</h3><p>PXL is CXL's prioritisation framework: binary questions instead of subjective 1–10 guesses, weighted toward evidence.</p><p>Findings discovered by inspection score zero on all four evidence questions — that is the honest signal, not a defect. Findings verified by direct measurement earn the extension point and, where real-user field data is involved, the analytics point.</p><p>The full rubric is on the <a href="methodology.html" style="color:var(--teal)">method page</a>.</p></template><script>
+(function(){
+  var root=document.getElementById('modal-root');
+  function close(){root.classList.remove('open');}
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('[data-m]');
+    if(b){var t=document.getElementById('m-'+b.getAttribute('data-m'));
+      if(t){root.querySelector('.modal-box').innerHTML=
+        '<button class="modal-close" aria-label="Close">\u00d7</button>'+t.innerHTML;
+        root.classList.add('open');}return;}
+    if(e.target.closest('.modal-close')||e.target===root)close();
+  });
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  function scale(){
+    document.querySelectorAll('.card-preview .preview-inner').forEach(function(el){
+      var w=el.parentElement.clientWidth;if(!w)return;
+      var s=w/1280;el.style.transform='scale('+s+')';
+      el.parentElement.style.height=Math.round(514*s)+'px';});
+  }
+  scale();window.addEventListener('resize',scale);
+})();
+</script>
+</body>
+</html>
